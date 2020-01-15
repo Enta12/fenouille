@@ -1,0 +1,172 @@
+header, footer {
+    background-color: #3f4345;
+    color : white;
+    display : flex;
+    justify-content: space-between;
+    height: 7em;
+    margin: 0;
+    align-items: center;
+    
+}
+
+nav {
+    background-color: darkgray;
+    display : flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 3em;
+}
+ 
+#content {
+    display : flex;
+    justify-content: space-around;
+    min-height: 100%;
+    padding: 4%;
+}
+
+a {
+    color : black;
+    //font-size: 1.2em;
+    text-decoration : none;
+    margin: 1%;
+}
+
+
+#line {
+    background-color: grey;
+    height: 0.2em;
+}
+
+body {
+    margin : 0;
+    height: 100%;
+    
+}
+
+html {
+    height: 100%;
+}
+
+.verticalLine{
+    background-color: black;
+    height: 100%;
+    width:  2px;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: gainsboro;
+    margin-left : 3%;
+    margin-right : 3%;
+    width: 100%;
+    align-items: 
+}
+
+header img{
+    margin: 2%;
+    flex : 20%;
+}
+
+header h1{
+    flex : 35%;
+}
+
+.unseen{
+    display: none;
+}
+
+.noMarginTop{
+    margin-top: 0;
+}
+
+.login{
+    flex : 45%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.login .grid{
+    display : grid;
+    grid-template: 1fr 1fr 1fr / 50% 30% 20%;
+    grid-auto-flow: column;
+}
+
+.errorLogin{
+    grid-area: 1 / 1 / span 3 / span 1;
+    align-self : center;
+}
+
+.login label:last-of-type{
+    grid-row-end: span 2;
+}
+
+.register{
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr 1fr / auto auto;
+    grid-auto-flow: column;
+}
+
+.register label:last-of-type{
+    grid-row-end: span 2;
+}
+
+.noGrid{
+    display: block;
+}
+
+
+.noMargin{
+    margin: 0;
+}
+
+.errorLogin{
+    width: 19em;
+    color : crimson;
+}
+
+header a {
+    color : whitesmoke;
+    font-size: 1.1em;
+    text-decoration : none;
+    margin: 1%;
+    margin: 0;
+}
+
+.labels{
+    padding-bottom: 1.2em;
+}
+
+.pictureHome{
+    display : flex;
+    flex-direction: column;
+    flex : 26%;
+    max-width: 26%;
+    background-color: lightgray;
+    align-items: center;
+    box-sizing: content-box;
+    margin: 2%;
+}
+
+.pictureHomeContainer{
+    display : flex;
+    justify-content: center;
+    margin : 4%;
+    font-family: cursive, serif;
+    font-size: larger;
+    font-style: oblique;
+    flex-wrap : wrap;
+}
+
+.pictureHome:nth-child(3n+2){
+    flex : 36%;
+    max-width: 36%;
+}
+.pictureHome img{
+    width: 100%;
+}
